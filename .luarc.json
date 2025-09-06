@@ -9,6 +9,7 @@
         "ease_ante",
         "ease_round",
         "localize",
-        "loc_colour"
+        "loc_colour",
+        "Big"
     ]
 }
