@@ -1,3 +1,14 @@
 {
-    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json"
+    "$schema": "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    "diagnostics.globals": [
+        "G",
+        "ease_dollars",
+        "ease_chips",
+        "ease_discard",
+        "ease_hands_played",
+        "ease_ante",
+        "ease_round",
+        "localize",
+        "loc_colour"
+    ]
 }
