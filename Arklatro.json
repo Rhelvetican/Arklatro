@@ -1,0 +1,17 @@
+{
+    "id": "arklatro",
+    "name": "Arklatro",
+    "display_name": "Arklatro",
+    "author": [
+        "Rhelvetican"
+    ],
+    "description": "Arknights X Balatro mod.",
+    "prefix": "ark",
+    "main_file": "Arklatro.lua",
+    "priority": 444,
+    "badge_colour": "0165FC",
+    "version": "0.0.1",
+    "dependencies": [
+        "Steamodded (>=1.0.0~BETA-0827c)"
+    ]
+}
