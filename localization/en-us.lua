@@ -35,6 +35,14 @@ return {
                 },
             },
 
+            j_ark_commandments = {
+                name = "Chivalric Commandments",
+                text = {
+                    "Gain {X:mult,C:white}X#1#{} whenever an {C:attention}Originium Card{}",
+                    "is {C:attention}destroyed{}",
+                },
+            },
+
             j_ark_ceobe = {
                 name = "Ceobe",
                 text = {
@@ -63,5 +71,10 @@ return {
 
     misc = {
         dictionary = {},
+        v_dictionary = {
+            arl_art = { "Art: #1#" },
+            arl_code = { "Code: #1#" },
+            arl_idea = { "Idea: #1#" },
+        },
     },
 }

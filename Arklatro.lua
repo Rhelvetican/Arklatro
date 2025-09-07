@@ -10,7 +10,6 @@ function Arklatro.loadFile(path)
     end
 end
 
-Arklatro.loadFile("libs/credits.lua")
 Arklatro.loadFile("libs/palette.lua")
 Arklatro.loadFile("libs/math.lua")
 

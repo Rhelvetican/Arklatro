@@ -5,11 +5,6 @@ SMODS.Enhancement({
 
     config = { extra = { scored_left = 5, xmult = 1.1 } },
 
-    ark_credits = {
-        art = { "Lil Mr. Slipstream" },
-        coding = { "Rhelvatican" },
-    },
-
     loc_vars = function(_, _, card)
         return {
             vars = {
@@ -46,7 +41,7 @@ SMODS.Enhancement({
                         if card then
                             card:flip()
                             card:juice_up(0.3, 0.5)
-                            card:set_ability(G.P_CENTERS["m_ark_originium"])
+                            card:set_ability(G.P_CENTERS.m_ark_originium)
                             card:flip()
                             card:juice_up(0.3, 0.5)
                         end
