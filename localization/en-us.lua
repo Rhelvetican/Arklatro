@@ -11,6 +11,7 @@ return {
             },
         },
 
+        ---@type {[string]: { name: string|string[], text: string[]|string[][] }}
         Joker = {
             j_ark_originium = {
                 name = "Originium Joker",
@@ -32,6 +33,13 @@ return {
                 text = {
                     "Upgrade level of {C:attention}played hand{} by {C:attention}#1#{}",
                     "Reduces by {C:red}#2#{} per hand played",
+                },
+            },
+
+            j_ark_kettle = {
+                name = "Water Kettle",
+                text = {
+                    "???",
                 },
             },
 

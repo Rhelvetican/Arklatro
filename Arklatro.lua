@@ -10,6 +10,7 @@ function Arklatro.loadFile(path)
     end
 end
 
+Arklatro.loadFile("libs/card.lua")
 Arklatro.loadFile("libs/palette.lua")
 Arklatro.loadFile("libs/math.lua")
 

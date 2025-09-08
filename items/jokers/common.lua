@@ -1,15 +1,8 @@
+---@return integer
 local function count_orig()
-    local orig = 0
-
-    if G and G.deck and G.deck.cards then
-        for _, card in ipairs(G.deck.cards) do
-            if SMODS.has_enhancement(card, "m_ark_originium") then
-                orig = orig + 1
-            end
-        end
-    end
-
-    return orig
+    return count_card(G.playing_cards or {}, function(card)
+        return SMODS.has_enhancement(card, "m_ark_originium")
+    end)
 end
 
 SMODS.Joker({
@@ -18,7 +11,7 @@ SMODS.Joker({
 
     pos = { x = 0, y = 0 },
     rarity = 1,
-    cost = 2,
+    cost = 4,
 
     config = { extra = { chips = 5 } },
 
@@ -71,7 +64,7 @@ SMODS.Joker({
 
     pos = { x = 0, y = 0 },
     rarity = 1,
-    cost = 3,
+    cost = 4,
 
     config = { extra = { level = 2, level_mod = 1 } },
 
