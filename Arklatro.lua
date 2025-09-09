@@ -12,7 +12,7 @@ end
 
 Arklatro.loadFile("libs/card.lua")
 Arklatro.loadFile("libs/palette.lua")
-Arklatro.loadFile("libs/math.lua")
+Arklatro.loadFile("libs/utils.lua")
 
 Arklatro.loadFile("items/atlas.lua")
 Arklatro.loadFile("items/enhancements.lua")
@@ -20,3 +20,4 @@ Arklatro.loadFile("items/jokers/common.lua")
 Arklatro.loadFile("items/jokers/uncommon.lua")
 Arklatro.loadFile("items/jokers/rare.lua")
 Arklatro.loadFile("items/jokers/legendary.lua")
+Arklatro.loadFile("items/jokers/mythic.lua")
