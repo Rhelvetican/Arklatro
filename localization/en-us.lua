@@ -84,23 +84,6 @@ return {
                     "{C:inactive}(Currently{} {X:mult,C:white}X#1#{} {C:inactive}Mult){}",
                 },
             },
-
-            j_ark_wisadel = {
-                name = "Wis'adel",
-                text = {
-                    {
-                        "When a {C:attention}Blind{} is selected",
-                        "set blind size to {C:attention}#1#{}",
-                    },
-                    {
-                        "Disables effect of every {C:attention}Boss Blind{}",
-                    },
-                    {
-                        "{X:mult,C:white}X#2#{} Mult",
-                        "All scored cards give {C:chips}+#3#{} Chips",
-                    },
-                },
-            },
         },
 
         Enhanced = {
@@ -109,7 +92,7 @@ return {
                 text = {
                     {
                         "{X:mult,C:white}X#1#{} Mult",
-                        "Self-destructing after being scored {C:attention}#2#{} #3#",
+                        "Self-destruct after being scored {C:attention}#2#{} #3#",
                         "and convert {C:attention}adjacent{} cards into {C:attention}Originium Cards{}",
                     },
                 },

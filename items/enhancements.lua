@@ -3,7 +3,7 @@ SMODS.Enhancement({
     atlas = "enhancements",
     pos = { x = 0, y = 0 },
 
-    config = { extra = { scored_left = 5, xmult = 1.1 } },
+    config = { extra = { scored_left = 5, xmult = 2 } },
 
     loc_vars = function(_, _, card)
         return {
