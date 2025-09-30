@@ -3,7 +3,7 @@ SMODS.Enhancement({
     atlas = "enhancements",
     pos = { x = 0, y = 0 },
 
-    config = { extra = { scored_left = 5, xmult = 2 } },
+    config = { extra = { scored_left = 3, xmult = 2 } },
 
     loc_vars = function(_, _, card)
         return {
@@ -16,11 +16,6 @@ SMODS.Enhancement({
     end,
 
     calculate = function(_, card, ctx)
-        if ctx.cardarea == G.play and ctx.main_scoring then
-            card.ability.extra.scored_left = math.min(card.ability.extra.scored_left - 1, 0)
-            return { xmult = card.ability.extra.xmult }
-        end
-
         if ctx.after and card.ability.extra.scored_left < 1 then
             local turn = {}
 
@@ -50,6 +45,11 @@ SMODS.Enhancement({
                     end,
                 }))
             end
+        end
+
+        if ctx.cardarea == G.play and ctx.main_scoring then
+            card.ability.extra.scored_left = math.min(card.ability.extra.scored_left - 1, 0)
+            return { xmult = card.ability.extra.xmult }
         end
     end,
 })

@@ -9,3 +9,13 @@ end
 function get_blind_size()
     return G.GAME.blind.chips
 end
+
+---@param n number|table
+function set_cash(n)
+    G.GAME.dollars = n
+end
+
+---@return number|table
+function get_cash()
+    return G.GAME.dollars
+end

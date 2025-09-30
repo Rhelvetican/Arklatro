@@ -13,75 +13,21 @@ return {
 
         ---@type {[string]: { name: string|string[], text: string[]|string[][] }}
         Joker = {
-            j_ark_originium = {
-                name = "Originium Joker",
+            j_ark_guldul_silence = {
+                name = "Gul'dul's Silence",
                 text = {
-                    "{C:chips}+#1#{} Chips for every {C:attention}Originium Card{} in deck",
-                    "{C:inactive}(Currently {C:chips}+#2#{} {C:inactive}Chips){}",
+                    "{X:attention,C:white}X#1#{} {C:attention}Blind size{}",
+                    "Earn an extra {C:money}$#2#{} at the end of round",
                 },
             },
 
-            j_ark_coin = {
-                name = "Antique Coin",
+            j_ark_golden_chalice = {
+                name = "Golden Chalice",
                 text = {
-                    "Gain {C:money}$#1#{} when {C:attention}sold{}",
-                },
-            },
-
-            j_ark_vanilla_soda = {
-                name = "Vanilla Soda",
-                text = {
-                    "Upgrade level of {C:attention}played hand{} by {C:attention}#1#{}",
-                    "Reduces by {C:red}#2#{} per hand played",
-                },
-            },
-
-            j_ark_kettle = {
-                name = "Water Kettle",
-                text = {
-                    "{X:mult,C:white}X#1#{} Mult if {C:attention}#2#{} {C:inactive}[#3#]{}",
-                    "cards with {C:clubs}Clubs{} suit were {C:attention}discarded{} this round.",
-                },
-            },
-
-            j_ark_silver = {
-                name = "Silver Forks",
-                text = {
-                    "{X:mult,C:white}X#1#{} Mult",
-                },
-            },
-
-            j_ark_commandments = {
-                name = "Chivalric Commandments",
-                text = {
-                    "Gain {X:mult,C:white}X#1#{} whenever an {C:attention}Originium Card{}",
-                    "is {C:attention}destroyed{}",
-                    "{C:inactive}(Currently {X:mult,C:white}X#2#{} {C:inactive}Mult){}",
-                },
-            },
-
-            j_ark_profound = {
-                name = "Profound Silence",
-                text = {
-                    "Reduces blind size by {C:attention}#1#%{}",
-                },
-            },
-
-            j_ark_lament = {
-                name = "Brilliant Lament",
-                text = {
-                    "Each card also gives {X:mult,C:white}X#1#{} Mult when {C:attention}scored{}",
-                },
-            },
-
-            j_ark_ceobe = {
-                name = "Ceobe",
-                text = {
-                    "When a {C:attention}Boss Blind{} is {C:attention}defeated{}",
-                    "gain {X:mult,C:white}XMult{} equal to {C:attention}blind size's{}",
-                    "rounded down standard logarithm",
-                    "{C:inactive,s:0.75}(Up to{} {X:mult,C:white,s:0.75}X#2#{} {C:inactive,s:0.75}Mult can be gained at once){}",
-                    "{C:inactive}(Currently{} {X:mult,C:white}X#1#{} {C:inactive}Mult){}",
+                    "Retrigger played cards {C:attention}once{}",
+                    "for every {C:money}$#1#{} you have",
+                    "{C:inactive}(Up to{} {C:attention}#2#{} retriggers){}",
+                    "{C:inactive}(Currently {C:attention}#3#{} {C:inactive} #4#){}",
                 },
             },
         },
@@ -101,18 +47,14 @@ return {
     },
 
     misc = {
-        labels = {
-            k_ark_mythic = "Mythic",
-        },
+        labels = {},
 
-        dictionary = {
-            k_ark_mythic = "Mythic",
-        },
+        dictionary = {},
 
         v_dictionary = {
-            arl_art = { "Art: #1#" },
-            arl_code = { "Code: #1#" },
-            arl_idea = { "Idea: #1#" },
+            ark_art = { "Art: #1#" },
+            ark_code = { "Code: #1#" },
+            ark_idea = { "Idea: #1#" },
         },
     },
 }

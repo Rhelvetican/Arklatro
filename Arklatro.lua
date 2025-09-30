@@ -10,14 +10,16 @@ function Arklatro.loadFile(path)
     end
 end
 
-Arklatro.loadFile("libs/card.lua")
-Arklatro.loadFile("libs/palette.lua")
-Arklatro.loadFile("libs/utils.lua")
+---@param dir string
+function Arklatro.recursiveLoad(dir)
+    for _, entr in ipairs(NFS.getDirectoryItemsInfo(dir)) do
+        if entr.type == "directory" then
+            Arklatro.recursiveLoad(dir .. "/" .. entr.name)
+        elseif entr.type == "file" then
+            Arklatro.loadFile(dir .. "/" .. entr.name)
+        end
+    end
+end
 
-Arklatro.loadFile("items/atlas.lua")
-Arklatro.loadFile("items/enhancements.lua")
-Arklatro.loadFile("items/consumables/tarot.lua")
-Arklatro.loadFile("items/jokers/common.lua")
-Arklatro.loadFile("items/jokers/uncommon.lua")
-Arklatro.loadFile("items/jokers/rare.lua")
-Arklatro.loadFile("items/jokers/legendary.lua")
+Arklatro.recursiveLoad("libs")
+Arklatro.recursiveLoad("items")
